@@ -3,6 +3,7 @@
 
 # As Yeoman assumes the usage of Bower and Grunt, ignore the below:
 bower_components
+comonents
 node_modules
 
 # Ignore automatically generated cruft
@@ -11,9 +12,8 @@ node_modules
 
 # Ignore config
 local-config.php
-
 wp-config.php
-
+.htaccess
 
 # Operating system files
 .Spotlight-V100
@@ -38,4 +38,4 @@ content/cache/
 content/uploads/
 content/upgrade/
 content/wp-cache-config.php
-
+duplicate-post/
