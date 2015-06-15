@@ -1,0 +1,24 @@
+{
+  "name": "RDMGumbyShell",
+  "version": "1.2.1",
+  "homepage": "https://github.com/RainyDayMedia/RDMGumbyShell",
+  "authors": [
+    "Todd Miller <todd@rainydaymedia.net>"
+  ],
+  "description": "A blank theme for WordPress based on the Gumby Framework with Gulp.",
+  "license": "GPL2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gumby": "~2.6.3"
+  }
+}
