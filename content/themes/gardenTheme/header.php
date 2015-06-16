@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-
+	<h3>FFXIV Gardening</h3>
 
 	</header><!-- #masthead -->
 
