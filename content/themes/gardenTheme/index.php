@@ -12,6 +12,13 @@
  */
 get_header(); ?>
 
-
+<div class="row">
+	<div class="twelve columns">
+		<p>Twelve</p>
+	</div>
+	<div class="four columns">
+		<p>Four</p>
+	</div>
+</div>
 
 <?php get_footer(); ?>

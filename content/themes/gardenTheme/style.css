@@ -1343,7 +1343,7 @@ img { -ms-interpolation-mode: bicubic; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li a { color: white; border-bottom: 1px solid #e6e6e6; }
   .gumby-no-touch .navbar ul li:hover .dropdown ul li a:hover { color: #d04526; } }
 
-.gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { border-top: none; display: block; position: absolute; z-index: 9999; left: 100%; top: 0; margin-top: 0; }
+.gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { border-top: none; display: block; position: absolute; z-index: 9999; left: 100%; top: 50px; margin-top: 0; }
 @media only screen and (max-width: 767px) { .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown, .gumby-touch .navbar li .dropdown ul > li.active .dropdown { position: relative; left: 0; }
   .gumby-no-touch .navbar li .dropdown ul > li:hover .dropdown ul, .gumby-touch .navbar li .dropdown ul > li.active .dropdown ul { background: #d9d9d9 !important; } }
 
@@ -1782,9 +1782,9 @@ span.right, li.right { float: right; }
 ----------------------------------------------- */
 /* =Navigation
 ----------------------------------------------- */
-.navbar { background: #fff; max-width: 100%; }
+.navbar { background: #fff; max-width: 1120px; }
 
-.site-header { background: #449D44; color: white; }
+.site-header { background: #449D44; color: white; height: 50px; margin-bottom: 75px; }
 
 /* =Widgets
 ----------------------------------------------- */
@@ -1824,6 +1824,8 @@ p.bold { font-weight: 600; }
 .bold { font-weight: 700; }
 
 .semibold { font-weight: 600; }
+
+.mediumbold { font-weight: 500; }
 
 .italic { font-style: italic; }
 

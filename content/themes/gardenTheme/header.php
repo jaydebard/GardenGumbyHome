@@ -19,6 +19,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
+  <!-- Needed for browser-sync to work (for now) -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body <?php body_class(); ?>>
@@ -27,15 +29,15 @@
 	<header id="masthead" class="site-header" role="banner">
 
 	<div class="row">
-	<div class="twelve columns">
-	<h3>FFXIV Gardening</h3>
+	<div class="sixteen columns">
+	<h4 class="bold">FFXIV Gardening</h4>
 	</div>
 	</div>
 
 <div class="row navbar" id="nav1">
   <!-- Toggle for mobile navigation, targeting the <ul> -->
   <a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
-  <ul class="twelve columns centered">
+  <ul class="ten columns">
     <li><a href="#">Seeds</a></li>
     <li>
       <a href="#">Resources</a>
