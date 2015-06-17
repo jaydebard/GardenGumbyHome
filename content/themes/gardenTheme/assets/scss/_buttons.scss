@@ -24,15 +24,16 @@
 
 // just an example for reference
 .btn.primary {
-    background: #000;
+    background: #3085D6;
     padding: 5px;
-    border: 3px solid $black;
+    border: 1px solid $black;
+    border-radius: $button-radius;
     color: $black;
 }
 
 .btn.primary:hover,
 .btn.primary:active {
-    background: $black;
+    background: #379AF6;
 
     > a {
         color: $white;

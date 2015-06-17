@@ -26,7 +26,34 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
+	<div class="row">
+	<div class="twelve columns">
 	<h3>FFXIV Gardening</h3>
+	</div>
+	</div>
+
+<div class="row navbar" id="nav1">
+  <!-- Toggle for mobile navigation, targeting the <ul> -->
+  <a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
+  <ul class="twelve columns centered">
+    <li><a href="#">Seeds</a></li>
+    <li>
+      <a href="#">Resources</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="#">The Grid</a></li>
+          <li><a href="#">UI Kit</a></li>
+          <li><a href="#">Sass</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Demo</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="#">Links</a></li>
+    <li><a href="#">Garden Planner</a></li>
+    <li><a href="#">Submit Cross</a></li>
+  </ul>
+</div>
 
 	</header><!-- #masthead -->
 
