@@ -1778,13 +1778,15 @@ span.right, li.right { float: right; }
 .btn.primary:hover, .btn.primary:active { background: #379AF6; }
 .btn.primary:hover > a, .btn.primary:active > a { color: white; }
 
+.header-flags { margin-top: 12px; }
+
 /* =Forms
 ----------------------------------------------- */
 /* =Navigation
 ----------------------------------------------- */
 .navbar { background: #fff; max-width: 1120px; }
 
-.site-header { background: #449D44; color: white; height: 50px; margin-bottom: 75px; }
+.site-header { background: #449D44; color: white; height: 50px; margin-bottom: 75px; border-bottom: 1px solid #000; }
 
 /* =Widgets
 ----------------------------------------------- */

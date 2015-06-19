@@ -19,8 +19,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
-  <!-- Needed for browser-sync to work (for now) -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  
 </head>
 
 <body <?php body_class(); ?>>
