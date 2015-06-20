@@ -40,6 +40,11 @@
     }
 }
 
+.btn.danger {
+    border: 1px solid $black;
+    border-radius: $button-radius;
+}
+
 .header-flags {
     margin-top: 12px;
 }
