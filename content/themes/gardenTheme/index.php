@@ -20,7 +20,7 @@ get_header(); ?>
 		</div>
 		<div class="centered twelve columns" align="center">
 			<div class="medium danger btn">
-				<a href="#">View Update Archive (Dev)</a>
+				<a href="#">View Update Archive</a>
 			</div>
 		</div>
 	</div>
