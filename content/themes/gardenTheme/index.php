@@ -12,6 +12,7 @@
  */
 get_header(); ?>
 
+<!--
 <div class="jumbotron">
 	<div class="row">
 		<div class="centered fourteen columns">
@@ -33,5 +34,13 @@ get_header(); ?>
 <p align="right">Right</p>
 </div>
 </div>
+-->
+
+<?php
+ $query = new WP_Query( array('post_type' => 'movie-reviews', 'posts_per_page' => 5 ) );
+ while ( $query->have_posts() ) : $query->the_post(); ?>
+
+<?php wp_reset_postdata(); ?>
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

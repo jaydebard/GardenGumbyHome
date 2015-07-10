@@ -183,5 +183,3 @@ function theme_enqueue_scripts() {
     add_action( 'wp_head', 'rdmgumby_output_favicons' );
     add_action( 'admin_head', 'rdmgumby_output_favicons' );
     add_action( 'login_head', 'rdmgumby_output_favicons' );
-
-
