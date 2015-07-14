@@ -96,13 +96,13 @@ function rdmgumby_widgets_init()
 	 * This includes the free version (4.3.9) of ACF and is included with this theme
 	 * Comment this out if you are using ACF Pro
 	 */
-	include_once( get_template_directory() . '/inc/advanced-custom-fields/acf.php' );
+	// include_once( get_template_directory() . '/inc/advanced-custom-fields/acf.php' );
 
 	/**
 	 * This includes ACF Pro, but you must install into ./inc/ yourself
 	 * If using ACF Pro, simply uncomment all of the following code
 	 */
-	/*
+	
 	add_filter( 'acf/settings/path', 'acfSettingsPath' );
 	function acfSettingsPath( $path )
 	{
@@ -118,7 +118,7 @@ function rdmgumby_widgets_init()
 	}
 
 	include_once( get_template_directory() . '/inc/advanced-custom-fields-pro/acf.php' );
-	*/
+	
 
 /**
  * RICG Responsive Images plugin v2.1.1
@@ -183,3 +183,24 @@ function theme_enqueue_scripts() {
     add_action( 'wp_head', 'rdmgumby_output_favicons' );
     add_action( 'admin_head', 'rdmgumby_output_favicons' );
     add_action( 'login_head', 'rdmgumby_output_favicons' );
+
+// Register Custom Post Types
+add_action('init', 'register_custom_posts_init');
+
+function register_custom_posts_init() {
+    // Register Products
+    $products_labels = array(
+        'name'               => 'Products',
+        'singular_name'      => 'Product',
+        'menu_name'          => 'Products'
+    );
+    $products_args = array(
+        'labels'             => $products_labels,
+        'public'             => true,
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'supports'           => array( 'title', 'revisions' )
+    );
+    register_post_type('products', $products_args);
+
+}

@@ -37,10 +37,30 @@ get_header(); ?>
 -->
 
 <?php
- $query = new WP_Query( array('post_type' => 'movie-reviews', 'posts_per_page' => 5 ) );
- while ( $query->have_posts() ) : $query->the_post(); ?>
-
-<?php wp_reset_postdata(); ?>
-<?php endwhile; ?>
+  $args = array(
+    'post_type' => 'products',
+    'post_status' => 'publish',
+    'posts_per_page' => '10'
+  );
+  $products_loop = new WP_Query( $args );
+  if ( $products_loop->have_posts() ) :
+    while ( $products_loop->have_posts() ) : $products_loop->the_post();
+      // Set variables
+      $title = get_the_title();
+      $description = get_the_content();
+      
+      $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
+      
+      // Output
+      ?>
+      <div class=”product”>
+        <h2><?php echo $title; ?></h2>
+        <?php echo $description; ?>
+      </div>
+      <?php
+      endwhile;
+    wp_reset_postdata();
+  endif;
+?>
 
 <?php get_footer(); ?>
